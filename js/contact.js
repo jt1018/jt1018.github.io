@@ -1,19 +1,23 @@
-  //  (function() {
-        // https://dashboard.emailjs.com/admin/integration
-  //      emailjs.init('jdtaylor');
-  //  })();
 
-  //  window.onload = function() {
-  //      document.getElementById('contact-form').addEventListener('submit', function(event) {
-  //          event.preventDefault();
-            // generate a five digit number for the contact_number variable
-  //          this.contact_number.value = contact_number;
-            // these IDs from the previous steps
-  //          emailjs.sendForm('contact_service', 'contact_form', this)
-    //            .then(function() {
-    //                console.log('SUCCESS!');
-    //            }, function(error) {
-    //                console.log('FAILED...', error);
-    //            });
-  //      });
-  //  }
+    (function() {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init('user_VJTJbztgum8mwX2qXaXLy');
+    })();
+
+
+
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // below maybe sends email
+          //  emailjs.send('jdtaylor', 'template_fwwruch', 'user_VJTJbztgum8mwX2qXaXLy');
+          // these IDs from the previous steps
+
+            emailjs.sendForm('jdtaylor', 'template_fwwruch', this, 'user_VJTJbztgum8mwX2qXaXLy')
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
