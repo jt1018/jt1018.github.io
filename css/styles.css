@@ -1,0 +1,17 @@
+img {
+display: block;
+margin-left:auto;
+margin-right:auto;
+}
+ul {
+text-align: center;
+list-style: inside;
+}
+a:hover {
+  background-color:white;
+    padding: 25px;
+}
+#nav {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
