@@ -1,6 +1,6 @@
     (function() {
         // https://dashboard.emailjs.com/admin/integration
-        emailjs.init('jdtaylor@udel.edu');
+        emailjs.init('jdtaylor');
     })();
 
     window.onload = function() {
