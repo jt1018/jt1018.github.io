@@ -4,12 +4,28 @@
     <title>Contact Me</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/contact.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/newnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
-<div style="height:auto; margin:0 auto; width:50%;">
-    <form id="contact-form">
-
+  <div id="navdiv" style="height:auto; margin:0 auto;">
+    <ul id="nav" >
+      <li><a href="index.html">Home</a></li>
+      <li ><a href="aboutMe.html">About Me</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li class="dropdown"><a>Class Links</a>
+        <ul class="dropdown-content">
+          <li><a href="https://sunxinyi0501.github.io/index.html">Previous</a></li>
+          <li><a href="https://paultownshend.github.io/personalWebsite/">Next</a></li>
+          <li><a href="https://github.com/jt1018/jt1018.github.io">Github</a></li>
+          <li><a href="https://mattm401.github.io">Class Website</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div style="height:auto; margin:0 auto; width:50%;">
+      <form id="contact-form">
         <p style="text-align:center"><label>First Name</label>
         <input type="text" name="user_fname" required></p>
         <p style="text-align:center">  <label>Last Name</label>
@@ -22,20 +38,11 @@
         <textarea name="message" required></textarea></p>
         <p style="text-align:center"><input type="submit" value="Send"></p>
         <p style="text-align:center"><a href="index.html">Back</a></p>
-
     </form>
-</div>
-<div class="navbar">
+  </div>
+  <div class="footer">
+    <p><a href="mailto:jdtaylor@udel.edu" class="fa fa-google"></a>      <a href="https://www.linkedin.com/in/justin-taylor-45b584214/" class="fa fa-linkedin"></a>     <a href="https://github.com/jt1018" class="fa fa-github"></a></p>
+  </div>
 
-  <p id="nav" style="text-align:center;background-color:grey;">
-    <a href="https://sunxinyi0501.github.io/index.html">Previous</a>
-    <a href="https://github.com/jt1018/jt1018.github.io">Github</a>
-    <a href="aboutMe.html">About Me</a>
-    <a href="contact.html">Contact Me</a>
-    <a href="https://mattm401.github.io">Class Website</a>
-    <a href="https://paultownshend.github.io/personalWebsite/">Next</a>
-  </p>
-
-</div>
 </body>
 </html>
